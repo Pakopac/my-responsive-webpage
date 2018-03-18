@@ -37,7 +37,7 @@ nav{
     top: 0;
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 15em 20vh 10fr 10fr 6fr 9fr 7fr 2fr 1fr
+    grid-template-rows: 300px 300px 10fr 10fr 6fr 9fr 7fr 2fr 1fr
 }
 .hero{
     display: flex;
@@ -59,11 +59,36 @@ nav{
     background: #4b565e;
     color: white;
 }
-.br{
-    display: none;
-}
-.block2{
+.services{
+    padding: 10px;
     background: #4bcaff;
+}
+.titleService{
+    color: #ffffff;
+    margin-left: 20px;
+}
+.highlighted{
+    margin-left: 20px;
+    width: 30px;
+    height: 1px;
+    background: #ffffff;
+}
+.contentService{
+    margin-top: 20px;
+    margin-left: 8%;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 10px;
+}
+.subTitleServices{
+    font-size: 0.8em;
+    margin-top: 10px;
+    color: #ffffff;
+}
+.textServices{
+    color: #ffffff;
+    font-size: 0.3em;
 }
 .block3{
 
