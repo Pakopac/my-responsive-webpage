@@ -11,6 +11,7 @@ header{
     align-items: center;
 }
 .titleHeader{
+    color: #ffffff;
     margin-left: 10px;
 }
 nav a{
@@ -36,7 +37,7 @@ nav{
     top: 0;
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 50vh 9fr 14fr 10fr 6fr 9fr 7fr 2fr 1fr
+    grid-template-rows: 15em 20vh 10fr 10fr 6fr 9fr 7fr 2fr 1fr
 }
 .hero{
     display: flex;
@@ -44,18 +45,22 @@ nav{
     background-image: url('img/image_header.png');
     background-size: 100% 100%;
     align-items: center;
+    justify-content: center;
 }
 .textHero1{
-    margin-top: 25vh;
+    height: 5vw;
 }
 .textHero2 {
     margin-top: -8px;
+    height: 11vw;
 }
 .textHero1, .textHero2{
-    font-size: 3.5vw;
+    font-size: 4.5vw;
     background: #4b565e;
     color: white;
-    height: 4vw;
+}
+.br{
+    display: none;
 }
 .block2{
     background: #4bcaff;
