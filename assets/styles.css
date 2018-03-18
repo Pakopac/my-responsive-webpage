@@ -38,10 +38,24 @@ nav{
     grid-template-columns: 100vw;
     grid-template-rows: 50vh 9fr 14fr 10fr 6fr 9fr 7fr 2fr 1fr
 }
-.block1{
-    width: 100%;
-    height: 100%;
-    background: black;
+.hero{
+    display: flex;
+    flex-direction: column;
+    background-image: url('img/image_header.png');
+    background-size: 100% 100%;
+    align-items: center;
+}
+.textHero1{
+    margin-top: 25vh;
+}
+.textHero2 {
+    margin-top: -8px;
+}
+.textHero1, .textHero2{
+    font-size: 3.5vw;
+    background: #4b565e;
+    color: white;
+    height: 4vw;
 }
 .block2{
     background: #4bcaff;
