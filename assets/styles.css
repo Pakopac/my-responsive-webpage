@@ -1,5 +1,5 @@
 header{
-     background: rgba(57, 68, 75, 0.51);
+    background: rgba(57, 68, 75, 0.51);
     width: 100vw;
     height: 15vh;
     position: fixed;
@@ -14,11 +14,11 @@ header{
     color: #ffffff;
     margin-left: 10px;
 }
-nav a{
+.navHeader a{
     color: #ffffff;
     text-decoration: none;
 }
-nav a:hover{
+.navHeader a:hover{
     color: #4bcaff;
 }
 nav{
@@ -37,7 +37,10 @@ nav{
     top: 0;
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 300px 300px 10fr 10fr 6fr 9fr 7fr 2fr 1fr
+    grid-template-rows: 50vw 300px 500px 10fr 6fr 9fr 7fr 2fr 1fr
+}
+.imgPortfolio:hover{
+    background: #3f484f;
 }
 .hero{
     display: flex;
@@ -90,8 +93,48 @@ nav{
     color: #ffffff;
     font-size: 0.3em;
 }
-.block3{
-
+.titlePortfolio{
+    color: #000;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.highlightedBlack{
+    margin-left: 20px;
+    width: 30px;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    margin-top: 30px;
+}
+.portfolioheader{
+    display: flex;
+}
+.navPortfolio, .titlePortfolio{
+    height: 20px;
+}
+.navPortfolio{
+    margin-left: 2vw;
+    margin-top: 2vh;
+    font-size: 0.7em;
+}
+.navPortfolio a{
+    color: #000000;
+    text-decoration: none;
+}
+.navPortfolio a:hover{
+    color: #4bcaff;
+}
+.imagesPortfolio{
+    margin-top: 4vh;
+    margin-left: 15vw;
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: repeat(4, 100px);
+    grid-gap: 10px;
+}
+.imgPortfolio{
+    width: 100px;
+    height: 100px;
 }
 .block4{
     background: #515f67;
