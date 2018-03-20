@@ -79,7 +79,7 @@ nav{
     margin-top: 20px;
     margin-left: 8%;
     display: grid;
-    grid-template-columns: 45% 45%;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
     grid-template-rows: 50% 50%;
     grid-gap: 10px;
 }
@@ -90,7 +90,7 @@ nav{
 }
 .textServices{
     color: #ffffff;
-    font-size: 0.3em;
+    font-size: 10px;
 }
 .titlePortfolio{
     color: #000;
