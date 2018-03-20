@@ -37,7 +37,7 @@ nav{
     top: 0;
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 50vw 300px 500px 10fr 6fr 9fr 7fr 2fr 1fr
+        grid-template-rows: 2.5fr 1fr 2fr 2fr 6fr 4fr 5fr 2fr 1fr
 }
 .imgPortfolio:hover{
     background: #3f484f;
@@ -71,7 +71,6 @@ nav{
     margin-left: 20px;
 }
 .highlighted{
-    margin-left: 20px;
     width: 30px;
     height: 1px;
     background: #ffffff;
@@ -125,10 +124,11 @@ nav{
     color: #4bcaff;
 }
 .imagesPortfolio{
+    max-width: 500px;
     margin-top: 4vh;
     margin-left: 15vw;
     display: grid;
-    grid-template-columns: 100px 100px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
     grid-template-rows: repeat(4, 100px);
     grid-gap: 10px;
 }
@@ -136,8 +136,37 @@ nav{
     width: 100px;
     height: 100px;
 }
-.block4{
+.section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
     background: #515f67;
+    color: #ffffff;
+}
+.blockSection1{
+    margin: 10%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.blockSection2{
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgVimeo{
+    width: 40vw;
+    height: 20vw;
+    max-width: 350px;
+    max-height: 200px;
+}
+.btnVisit{
+    background: inherit;
+    border: 2px solid black;
+    min-width: 100px;
+    padding: 15px;
+    width: 15vw;
 }
 .block5{
     background: #4bcaff;
