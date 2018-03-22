@@ -4,7 +4,6 @@ header{
     height: 15vh;
     position: fixed;
     display: flex;
-    font-size: 80%;
     top: 0;
     left: 0;
     z-index: 1;
@@ -21,7 +20,7 @@ header{
 .navHeader a:hover{
     color: #4bcaff;
 }
-nav{
+.navHeader{
     width: 100%;
     margin-left: 2vw;
     display: flex;
@@ -37,7 +36,7 @@ nav{
     top: 0;
     display: grid;
     grid-template-columns: 100vw;
-        grid-template-rows: 2.5fr 1fr 2fr 2fr 6fr 4fr 5fr 2fr 1fr
+    grid-template-rows: 1fr 1fr 2fr 2fr 6fr 4fr 5fr 2fr 1fr;
 }
 .imgPortfolio:hover{
     background: #3f484f;
@@ -46,21 +45,25 @@ nav{
     display: flex;
     flex-direction: column;
     background-image: url('img/image_header.png');
-    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 2180px 100%;
     align-items: center;
     justify-content: center;
+    padding: 0 11%;
 }
 .textHero1{
+    margin-top: 15vh;
 }
 .textHero2 {
     margin-top: -8px;
 }
 .textHero1, .textHero2{
+    font-size: 2em;
     background: #4b565e;
     color: white;
 }
 .services{
-    padding: 3% 11%;
+    padding: 3% 18%;
     background: #4bcaff;
 }
 .titleService{
@@ -86,13 +89,13 @@ nav{
 .textServices{
     color: #ffffff;
 }
+.portfolio{
+    padding: 3% 18%;
+}
 .titlePortfolio{
     color: #000;
-    margin-left: 20px;
-    margin-top: 10px;
 }
 .highlightedBlack{
-    margin-left: 20px;
     width: 30px;
     height: 1px;
     background: #000;
@@ -101,14 +104,15 @@ nav{
 }
 .portfolioheader{
     display: flex;
-}
-.navPortfolio, .titlePortfolio{
-    height: 20px;
+    align-items: center;
+    margin-bottom: 3%;
 }
 .navPortfolio{
-    margin-left: 2vw;
-    margin-top: 2vh;
-    font-size: 0.7em;
+    width: 100%;
+    margin-left: 27vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 .navPortfolio a{
     color: #000000;
@@ -118,17 +122,16 @@ nav{
     color: #4bcaff;
 }
 .imagesPortfolio{
-    max-width: 500px;
-    margin-top: 4vh;
-    margin-left: 15vw;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
-    grid-template-rows: repeat(4, 100px);
-    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(246px, 2fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 2fr));
+    grid-gap: 34px;
+    max-width: 1356px;
+    align-items: center;
 }
 .imgPortfolio{
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 100%;
 }
 .section{
     display: grid;
