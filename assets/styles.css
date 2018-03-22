@@ -4,7 +4,7 @@ header{
     height: 15vh;
     position: fixed;
     display: flex;
-    font-size: 0.8em;
+    font-size: 80%;
     top: 0;
     left: 0;
     z-index: 1;
@@ -51,46 +51,40 @@ nav{
     justify-content: center;
 }
 .textHero1{
-    height: 5vw;
 }
 .textHero2 {
     margin-top: -8px;
-    height: 11vw;
 }
 .textHero1, .textHero2{
-    font-size: 4.5vw;
     background: #4b565e;
     color: white;
 }
 .services{
-    padding: 10px;
+    padding: 3% 11%;
     background: #4bcaff;
 }
 .titleService{
     color: #ffffff;
-    margin-left: 20px;
 }
 .highlighted{
     width: 30px;
     height: 1px;
     background: #ffffff;
+    margin-top: -22px;
 }
 .contentService{
-    margin-top: 20px;
-    margin-left: 8%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
     grid-template-rows: 50% 50%;
     grid-gap: 10px;
+    margin-top: 20px;
 }
 .subTitleServices{
-    font-size: 0.8em;
     margin-top: 10px;
     color: #ffffff;
 }
 .textServices{
     color: #ffffff;
-    font-size: 10px;
 }
 .titlePortfolio{
     color: #000;
