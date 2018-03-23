@@ -36,7 +36,7 @@ header{
     top: 0;
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 1fr 1fr 2fr 2fr 6fr 4fr 5fr 2fr 1fr;
+    grid-template-rows: 1.7fr 1fr 1.7fr 1fr 0.5fr 1.2fr 0.5fr 1.7fr 0.3fr;
 }
 .imgPortfolio:hover{
     background: #3f484f;
@@ -62,7 +62,7 @@ header{
     background: #4b565e;
     color: white;
 }
-.services{
+#services{
     padding: 3% 18%;
     background: #4bcaff;
 }
@@ -89,7 +89,7 @@ header{
 .textServices{
     color: #ffffff;
 }
-.portfolio{
+#portfolio{
     padding: 3% 18%;
 }
 .titlePortfolio{
@@ -134,13 +134,15 @@ header{
     height: 100%;
 }
 .section{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    padding: 3% 18%;
     background: #515f67;
     color: #ffffff;
 }
+.sectionContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+}
 .blockSection1{
-    margin: 10%;
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -165,8 +167,18 @@ header{
     padding: 15px;
     width: 15vw;
 }
-.block5{
+.twitter{
+    font-size: 30px;
+    padding: 3% 18%;
     background: #4bcaff;
+    color: #ffffff;
+}
+.headerTwitter{
+    display: flex;
+    justify-content: space-between;
+}
+.cheescake{
+    font-weight: bold;
 }
 .block6{
     background: black;
