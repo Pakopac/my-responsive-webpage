@@ -48,6 +48,7 @@ header{
     background-size: 2180px 100%;
     align-items: center;
     justify-content: center;
+    padding: 10% 18%
 }
 .textHero1{
     margin-top: 15vh;
@@ -210,6 +211,6 @@ header{
 footer{
     background: #353f47;
 }
-.hero, #services, #portfolio, .section, .twitter, .whoIs, .testimonials{
+#services, #portfolio, .section, .twitter, .whoIs, .testimonials{
     padding: 3% 18%;
 }
