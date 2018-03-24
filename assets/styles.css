@@ -1,6 +1,5 @@
 header{
     background: rgba(57, 68, 75, 0.51);
-    width: 100vw;
     height: 15vh;
     position: fixed;
     display: flex;
@@ -8,6 +7,8 @@ header{
     left: 0;
     z-index: 1;
     align-items: center;
+    padding: 0 18%;
+    width: 64vw;
 }
 .titleHeader{
     color: #ffffff;
@@ -22,10 +23,10 @@ header{
 }
 .navHeader{
     width: 100%;
-    margin-left: 2vw;
+    margin-left: 27vw;
     display: flex;
+    justify-content: space-between;
     flex-flow: row wrap;
-    justify-content: space-evenly;
 }
 .letterE{
     color: #6fa2cc;
@@ -205,12 +206,60 @@ header{
 .WalterWhite{
     color: #4bcaff;
 }
-.block8{
-    background: black;
+#contact{
+    font-size: 20px;
+    color: #ffffff;
+    background-image: url('img/image_contact.png');
+    background-repeat: no-repeat;
+    background-size: 2180px 100%;
+}
+.blockContact1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    grid-column-gap: 15%;
+}
+.blockInputsNameEmail{
+    display: flex;
+    flex-direction: column;
+}
+ul{
+    padding-left: 0;
+    list-style: none;
+}
+input{
+    color: #ffffff;
+    font-size: 20px;
+    width: 100%;
+    background: inherit;
+    border: 2px solid #ffffff;
+    text-align: center;
+}
+.fullName{
+    margin-top: 30px;
+}
+.textContact1{
+    margin-top: 60px;
+}
+.email, .textContact2{
+    margin-top: 50px;
+}
+.inputText, .inputEmail{
+    height: 60px;
+}
+.inputMessage{
+    height: 200px;
+}
+.btnMessage{
+    margin-top: 3%;
+    width: 30%;
+    height: 50px;
+    background: #4bcaff;
+    border: 0;
+    color: #ffffff;
 }
 footer{
     background: #353f47;
 }
-#services, #portfolio, .section, .twitter, .whoIs, .testimonials{
+#services, #portfolio, .section, .twitter, .whoIs, .testimonials, #contact{
     padding: 3% 18%;
 }
