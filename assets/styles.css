@@ -36,7 +36,6 @@ header{
     top: 0;
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 1.7fr 1fr 1.7fr 1fr 0.5fr 1.2fr 0.5fr 1.7fr 0.3fr;
 }
 .imgPortfolio:hover{
     background: #3f484f;
@@ -49,7 +48,6 @@ header{
     background-size: 2180px 100%;
     align-items: center;
     justify-content: center;
-    padding: 0 11%;
 }
 .textHero1{
     margin-top: 15vh;
@@ -63,7 +61,6 @@ header{
     color: white;
 }
 #services{
-    padding: 3% 18%;
     background: #4bcaff;
 }
 .titleService{
@@ -89,9 +86,6 @@ header{
 .textServices{
     color: #ffffff;
 }
-#portfolio{
-    padding: 3% 18%;
-}
 .titlePortfolio{
     color: #000;
 }
@@ -99,8 +93,7 @@ header{
     width: 30px;
     height: 1px;
     background: #000;
-    position: absolute;
-    margin-top: 30px;
+    margin-top: -22px;
 }
 .portfolioheader{
     display: flex;
@@ -134,7 +127,6 @@ header{
     height: 100%;
 }
 .section{
-    padding: 3% 18%;
     background: #515f67;
     color: #ffffff;
 }
@@ -169,7 +161,6 @@ header{
 }
 .twitter{
     font-size: 30px;
-    padding: 3% 18%;
     background: #4bcaff;
     color: #ffffff;
 }
@@ -180,8 +171,23 @@ header{
 .cheescake{
     font-weight: bold;
 }
-.block6{
-    background: black;
+.whoIs{
+    background-image: url('img/image_whoIs.png');
+    background-repeat: no-repeat;
+    background-size: 2180px 100%;
+    color: #ffffff;
+    font-size: 22px;
+}
+.contentWhoIs{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    grid-gap: 50px;
+}
+.icons{
+    margin: 10px;
+    padding: 15px;
+    border: 2px solid #ffffff;
 }
 .block7{
 
@@ -191,4 +197,7 @@ header{
 }
 footer{
     background: #353f47;
+}
+.hero, #services, #portfolio, .section, .twitter, .whoIs{
+    padding: 3% 18%;
 }
