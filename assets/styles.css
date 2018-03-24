@@ -189,8 +189,20 @@ header{
     padding: 15px;
     border: 2px solid #ffffff;
 }
-.block7{
-
+.headerTestimonials{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.quote{
+    font-size: 50px;
+}
+.textTestimonials{
+    font-size: 30px;
+    line-height: 40px;
+}
+.WalterWhite{
+    color: #4bcaff;
 }
 .block8{
     background: black;
@@ -198,6 +210,6 @@ header{
 footer{
     background: #353f47;
 }
-.hero, #services, #portfolio, .section, .twitter, .whoIs{
+.hero, #services, #portfolio, .section, .twitter, .whoIs, .testimonials{
     padding: 3% 18%;
 }
