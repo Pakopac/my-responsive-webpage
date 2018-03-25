@@ -7,18 +7,24 @@ body{
 }
 header{
     background: rgba(57, 68, 75, 0.51);
-    height: 15vh;
     position: fixed;
     display: flex;
+    flex-direction: row;
     top: 0;
     left: 0;
     z-index: 1;
     align-items: center;
-    padding: 0 18%;
-    width: 64vw;
+    width: 100vw;
 }
 button{
     cursor: pointer;
+}
+.navHeader{
+    font-size: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 .titleHeader{
     color: #ffffff;
@@ -30,15 +36,10 @@ button{
 }
 .navHeader a:hover{
     color: #4bcaff;
-    border: 2px solid #4bcaff;
-    padding: 5px 15px;
 }
-.navHeader{
-    width: 100%;
-    margin-left: 27vw;
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row wrap;
+.eltNavHeader{
+    margin-left: 15px;
+    margin-bottom: 15px;
 }
 .letterE{
     color: #6fa2cc;
@@ -229,6 +230,10 @@ h2::after{
     grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
     grid-gap: 50px;
 }
+.blockWhoIs1{
+    display: flex;
+    flex-direction: column;
+}
 .icons{
     margin: 10px;
     padding: 15px;
@@ -299,7 +304,7 @@ input{
 .btnMessage{
     font-size: 1em;
     min-width: 150px;
-    margin-top: 3%;
+    margin-top: 50px;
     width: 30%;
     height: 50px;
     background: #4bcaff;
@@ -340,6 +345,16 @@ footer{
 .whoIs{
     padding: 5% 18%;
 }
+@media(min-width: 320px) {
+    header{
+        padding: 0 18%;
+        width: 64vw;
+        flex-direction: column;
+    }
+    .navHeader{
+        flex-flow: row wrap;
+    }
+}
 @media(min-width: 641px){
     .separateFooter{
         display: block;
@@ -347,5 +362,17 @@ footer{
     }
     .navFooter{
         flex-direction: row;
+    }
+}
+@media(min-width: 1025px) {
+    header{
+        flex-direction: row;
+    }
+    .navHeader{
+        margin-left: 27vw;
+    }
+    .navHeader a:hover{
+        border: 2px solid #4bcaff;
+        padding: 5px 15px;
     }
 }
