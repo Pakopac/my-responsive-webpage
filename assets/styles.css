@@ -63,9 +63,6 @@ button{
 .hideImg{
     display: none;
 }
-.imgPortfolio:hover{
-    background: #3f484f;
-}
 @keyframes displayImg{
     0%{opacity: 0; width: 70%; height: 70%; margin: 25px}
 }
@@ -195,6 +192,9 @@ h2::after{
 }
 .textSection1, .textSection2,.btnVisit{
     font-size: 1em;
+}
+iframe{
+    border: 0;
 }
 .btnVisit{
     margin-top: 5%;
