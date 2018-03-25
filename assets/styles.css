@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "bitter";
+    src: url("font/Bitter-Bold.ttf");
+}
+body{
+    font-family: "Segoe UI";
+}
 header{
     background: rgba(57, 68, 75, 0.51);
     height: 15vh;
@@ -58,12 +65,12 @@ button{
 .hero{
     display: flex;
     flex-direction: column;
-    background-image: url('img/image_header.png');
+    background-image: url('img/hero/image_hero.png');
     background-repeat: no-repeat;
     background-size: 2180px 100%;
     align-items: center;
     justify-content: center;
-    padding: 10% 18%
+    padding: 8% 18%
 }
 .textHero1{
     margin-top: 15vh;
@@ -72,7 +79,7 @@ button{
     margin-top: -8px;
 }
 .textHero1, .textHero2{
-    font-size: 2em;
+    font-size: 3em;
     background: #4b565e;
     color: white;
 }
@@ -90,14 +97,20 @@ button{
     margin-top: 20px;
 }
 .subTitleServices{
+    font-size: 1.3em;
     margin-top: 10px;
     color: #ffffff;
 }
 .textServices{
+    font-size: 1em;
     color: #ffffff;
 }
 .titlePortfolio{
     color: #000;
+}
+h2{
+    font-weight: inherit;
+    font-size: 2em;
 }
 h2::after{
     content: "";
@@ -158,7 +171,6 @@ h2::after{
     align-items: center;
 }
 .blockSection1{
-    font-size: 22px;
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -170,6 +182,9 @@ h2::after{
     justify-content: center;
     align-items: center;
 }
+.textSection1, .textSection2,.btnVisit{
+    font-size: 1em;
+}
 .imgVimeo{
     width: 40vw;
     height: 20vw;
@@ -177,20 +192,22 @@ h2::after{
     max-height: 200px;
 }
 .btnVisit{
+    margin-top: 5%;
     background: inherit;
     border: 2px solid black;
-    min-width: 100px;
+    min-width: 150px;
     padding: 15px;
     width: 15vw;
-    font-size: 22px;
 }
 .btnVisit:hover{
     background: #2c363c;
 }
 .twitter{
-    font-size: 30px;
     background: #4bcaff;
     color: #ffffff;
+}
+.textTwitter{
+    font-size: 2em;
 }
 .headerTwitter{
     display: flex;
@@ -200,13 +217,13 @@ h2::after{
     font-weight: bold;
 }
 .whoIs{
-    background-image: url('img/image_whoIs.png');
+    background-image: url('img/who_is/image_whoIs.png');
     background-repeat: no-repeat;
     background-size: 2180px 100%;
     color: #ffffff;
-    font-size: 22px;
 }
 .contentWhoIs{
+    font-size: 1em;
     margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
@@ -223,10 +240,11 @@ h2::after{
     justify-content: space-between;
 }
 .quote{
-    font-size: 50px;
+    font-family: "bitter";
+    font-size: 4em;
 }
 .textTestimonials{
-    font-size: 30px;
+    font-size: 2em;
     line-height: 40px;
 }
 .WalterWhite{
@@ -235,7 +253,7 @@ h2::after{
 #contact{
     font-size: 20px;
     color: #ffffff;
-    background-image: url('img/image_contact.png');
+    background-image: url('img/contact/image_contact.png');
     background-repeat: no-repeat;
     background-size: 2180px 100%;
 }
@@ -264,10 +282,13 @@ input{
     margin-top: 30px;
 }
 .textContact1{
-    margin-top: 60px;
+    margin-top: 50px;
 }
 .email, .textContact2{
     margin-top: 50px;
+}
+.textContact1, .textContact2{
+    font-size: 0.8em;
 }
 .inputText, .inputEmail{
     height: 60px;
@@ -276,6 +297,7 @@ input{
     height: 200px;
 }
 .btnMessage{
+    min-width: 150px;
     margin-top: 3%;
     width: 30%;
     height: 50px;
@@ -286,6 +308,9 @@ input{
 footer{
     background: #353f47;
 }
-#services, #portfolio, .section, .twitter, .whoIs, .testimonials, #contact{
+#services, #portfolio, .section, .twitter, .testimonials, #contact{
     padding: 3% 18%;
+}
+.whoIs{
+    padding: 5% 18%;
 }
