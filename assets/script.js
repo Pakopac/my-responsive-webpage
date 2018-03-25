@@ -14,27 +14,26 @@ window.onload = function(){
   var img7 = document.querySelector('#img7');
   var img8 = document.querySelector('#img8');
 
-  function displayAll(){
-      for (var i=0; i < allImg.length ; i++){
-          allImg[i].style.display = 'block'
-      }
-  }
-
   function hideImg(img) {
       for (var i=0; i < img.length; i++) {
           img[i].style.display = 'none'
       }
   }
 
-  function allButton(btn){
+    function displayAll(){
+        for (var i=0; i < allImg.length ; i++){
+            allImg[i].style.display = 'block';
+        }
+    }
+
+
+    function allButton(btn){
       for (var i=0; i < btn.length; i++){
           btn[i].addEventListener('click',function () {
               for (var i=0; i < btn.length; i++) {
                   btn[i].classList.remove('buttonClick');
-                  btn[i].classList.add('btnPortfolio');
               }
               displayAll();
-              this.classList.remove('btnPortfolio');
               this.classList.add('buttonClick');
           })
       }
@@ -55,5 +54,5 @@ window.onload = function(){
 
   btnJournal.addEventListener('click',function () {
       hideImg([img1,img3,img4,img7])
-  })
+  });
 };
