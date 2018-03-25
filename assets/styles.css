@@ -4,6 +4,7 @@
 }
 body{
     font-family: "Segoe UI";
+    overflow-x: hidden;
 }
 header{
     background: rgba(57, 68, 75, 0.51);
@@ -80,7 +81,7 @@ button{
     margin-top: -8px;
 }
 .textHero1, .textHero2{
-    font-size: 2em;
+    font-size: 1.5em;
     background: rgba(75, 86, 94, 0.64);
     color: white;
 }
@@ -174,7 +175,7 @@ h2::after{
     grid-gap: 40px;
 }
 .blockSection1{
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     
@@ -229,8 +230,12 @@ h2::after{
     grid-gap: 50px;
 }
 .blockWhoIs1{
+    width: 80%;
     display: flex;
     flex-direction: column;
+}
+.blockWhoIs2{
+    width: 80%;
 }
 .icons{
     margin: 10px;
@@ -268,6 +273,7 @@ h2::after{
 .blockInputsNameEmail{
     display: flex;
     flex-direction: column;
+    width: 80%;
 }
 ul{
     padding-left: 0;
@@ -291,6 +297,7 @@ input{
     margin-top: 50px;
 }
 .textContact1, .textContact2{
+    width: 80%;
     font-size: 0.8em;
 }
 .inputText, .inputEmail{
@@ -337,15 +344,12 @@ footer{
 .footerRight{
     color: #515f67;
 }
-#services, #portfolio, .section, .twitter, .testimonials, #contact,footer{
+#services, #portfolio, .section, .twitter, .testimonials, #contact,footer,.whoIs{
     padding: 3% 6%;
 }
 @media(min-width: 320px) {
     #services, #portfolio, .section, .twitter, .testimonials, #contact,footer{
         padding: 3% 18%;
-    }
-    .whoIs{
-        padding: 5% 18%;
     }
     header{
         padding: 0 18%;
@@ -355,13 +359,18 @@ footer{
     .navHeader{
         flex-flow: row wrap;
     }
+    .whoIs{
+        padding: 5% 18%;
+    }
 }
 @media(min-width: 481px){
+    .blockSection1, .blockWhoIs1,.blockWhoIs2, .blockInputsNameEmail, .textContact1, .textContact2{
+        width: 100%;
+    }
     .sectionVideo{
         width: 640px;
         height: 360px;
     }
-
 }
 @media(min-width: 641px){
     .textHero1, .textHero2{
