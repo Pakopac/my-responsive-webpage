@@ -308,7 +308,30 @@ input{
 footer{
     background: #353f47;
 }
-#services, #portfolio, .section, .twitter, .testimonials, #contact{
+.contentFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navFooter{
+    display: flex;
+    flex-direction: row;
+}
+.navFooter a{
+    text-decoration: none;
+    color: #515f67;
+}
+.navFooter a:hover{
+    color: #4bcaff;
+}
+.separateFooter{
+    margin: 0 5%;
+    color: #515f67;
+}
+.footerRight{
+    color: #515f67;
+}
+#services, #portfolio, .section, .twitter, .testimonials, #contact,footer{
     padding: 3% 18%;
 }
 .whoIs{
