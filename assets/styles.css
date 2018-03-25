@@ -80,8 +80,8 @@ button{
     margin-top: -8px;
 }
 .textHero1, .textHero2{
-    font-size: 3em;
-    background: #4b565e;
+    font-size: 2em;
+    background: rgba(75, 86, 94, 0.64);
     color: white;
 }
 #services{
@@ -128,12 +128,13 @@ h2::after{
 }
 .portfolioheader{
     display: flex;
+    flex-direction: column;
     align-items: center;
     margin-bottom: 3%;
 }
 .navPortfolio{
+    font-weight: bold;
     width: 100%;
-    margin-left: 27vw;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -142,13 +143,13 @@ h2::after{
     color: #4bcaff;
 }
 .btnPortfolio{
+    font-size: 1.2em;
     background: inherit;
     border: 1px solid #ffffff;
 }
 .btnPortfolio:hover, .buttonClick{
     background: inherit;
     color: #4bcaff;
-    border: 2px solid #4bcaff;
 }
 .imagesPortfolio{
     display: grid;
@@ -170,27 +171,24 @@ h2::after{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
     align-items: center;
+    grid-gap: 40px;
 }
 .blockSection1{
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     
 }
 .blockSection2{
-    height: 70%;
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+}
+.sectionVideo{
+    width: 160px;
+    height: 90px;
 }
 .textSection1, .textSection2,.btnVisit{
     font-size: 1em;
-}
-.imgVimeo{
-    width: 40vw;
-    height: 20vw;
-    max-width: 350px;
-    max-height: 200px;
 }
 .btnVisit{
     margin-top: 5%;
@@ -340,12 +338,15 @@ footer{
     color: #515f67;
 }
 #services, #portfolio, .section, .twitter, .testimonials, #contact,footer{
-    padding: 3% 18%;
-}
-.whoIs{
-    padding: 5% 18%;
+    padding: 3% 6%;
 }
 @media(min-width: 320px) {
+    #services, #portfolio, .section, .twitter, .testimonials, #contact,footer{
+        padding: 3% 18%;
+    }
+    .whoIs{
+        padding: 5% 18%;
+    }
     header{
         padding: 0 18%;
         width: 64vw;
@@ -355,7 +356,17 @@ footer{
         flex-flow: row wrap;
     }
 }
+@media(min-width: 481px){
+    .sectionVideo{
+        width: 640px;
+        height: 360px;
+    }
+
+}
 @media(min-width: 641px){
+    .textHero1, .textHero2{
+        font-size: 3em;
+    }
     .separateFooter{
         display: block;
         margin: 0 5%;
@@ -374,5 +385,16 @@ footer{
     .navHeader a:hover{
         border: 2px solid #4bcaff;
         padding: 5px 15px;
+    }
+    .portfolioheader{
+        flex-direction: row;
+    }
+    .btnPortfolio:hover, .buttonClick{
+        background: inherit;
+        color: #4bcaff;
+        border: 2px solid #4bcaff;
+    }
+    .navPortfolio{
+        margin-left: 27vw;
     }
 }
